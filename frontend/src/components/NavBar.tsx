@@ -1,20 +1,38 @@
 import Link from 'next/link';
 
+const links = [
+  { href: '/services', label: 'Services' },
+  { href: '/portfolio', label: 'Portfolio' },
+  { href: '/process', label: 'Processus' },
+  { href: '/about', label: 'À propos' },
+  { href: '/legal', label: 'Mentions légales' }
+];
+
 export default function NavBar() {
   return (
-    <header>
-      <nav className="max-w-5xl mx-auto flex justify-between items-center">
-        <Link href="/">
-          <span className="font-bold text-xl">Akoba</span>
+    <header className="site-header">
+      <div className="container site-nav">
+        <Link href="/" className="brand">
+          <span aria-label="Akoba">Akoba Studio</span>
         </Link>
-        <ul className="flex space-x-4">
-          <li><Link href="/services">Services</Link></li>
-          <li><Link href="/portfolio">Portfolio</Link></li>
-          <li><Link href="/process">Process</Link></li>
-          <li><Link href="/about">À&nbsp;propos</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
-        </ul>
-      </nav>
+        <nav aria-label="Navigation principale">
+          <ul className="nav-links">
+            {links.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className="nav-actions">
+          <Link href="/contact" className="ghost-button" aria-label="Accéder au formulaire de brief">
+            Brief rapide
+          </Link>
+          <Link href="/contact" className="cta-button" aria-label="Proposer un projet">
+            Proposer un projet
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }
