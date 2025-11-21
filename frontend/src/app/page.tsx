@@ -226,6 +226,30 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="section" aria-labelledby="acces-temporaire">
+          <div className="container">
+            <div className="section-header">
+              <div className="section-kicker">Accès temporaire</div>
+              <h2 id="acces-temporaire" className="section-title">Tester les espaces sans sous-domaines configurés.</h2>
+              <p className="section-lead">
+                Utilisez ces boutons le temps de la mise en place des sous-domaines app.akoba.fr et staff.akoba.fr. Ils pointent
+                vers les mêmes fonctionnalités hébergées sous ce domaine.
+              </p>
+            </div>
+            <div className="nav-actions">
+              <Link href="/app" className="cta-button" aria-label="Accéder à l’espace client temporaire">
+                Accès client (temporaire)
+              </Link>
+              <Link href="/staff" className="ghost-button" aria-label="Accéder à l’espace staff temporaire">
+                Accès staff (temporaire)
+              </Link>
+            </div>
+            <p className="helper-text" role="status">
+              Dès que les sous-domaines seront actifs, ces liens seront remplacés par app.akoba.fr et staff.akoba.fr.
+            </p>
+          </div>
+        </section>
+
         <section className="section" aria-labelledby="cta-final">
           <div className="container">
             <div className="pattern-tile">
