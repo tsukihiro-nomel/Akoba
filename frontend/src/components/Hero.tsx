@@ -14,7 +14,7 @@ const heroImages = [
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero baoule-hero">
       <div className="container hero-grid">
         <div className="hero-copy">
           <div className="section-kicker">Studio 3D · Côte d’Ivoire x Europe</div>
@@ -25,6 +25,11 @@ export default function Hero() {
             Akoba produit des packshots, des scènes de campagne et des animations 3D sans louer de studio physique.
             Obtenez plus de déclinaisons, contrôlez chaque détail et collaborez en ligne avec notre équipe.
           </p>
+          <div className="baoule-badge-row" aria-label="Palette et motifs baoulé">
+            <span className="baoule-chip">Motifs tissés baoulé</span>
+            <span className="baoule-chip">Palette ocre & indigo</span>
+            <span className="baoule-chip">Accents géométriques</span>
+          </div>
           <div className="badge-row" aria-label="Points forts">
             <span className="badge">Variantes infinies</span>
             <span className="badge">Coûts optimisés</span>

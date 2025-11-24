@@ -107,7 +107,7 @@ export default function HomePage() {
       <main>
         <Hero />
 
-        <section className="section" aria-labelledby="valeur-ajoutee">
+        <section className="section baoule-section" aria-labelledby="valeur-ajoutee">
           <div className="container">
             <div className="section-header">
               <div className="section-kicker">Valeur ajoutée</div>
@@ -132,7 +132,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section" aria-labelledby="services">
+        <section className="section baoule-section" aria-labelledby="services">
           <div className="container">
             <div className="section-header">
               <div className="section-kicker">Services</div>
@@ -161,7 +161,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section" aria-labelledby="showcase">
+        <section className="section baoule-section" aria-labelledby="showcase">
           <div className="container">
             <div className="section-header">
               <div className="section-kicker">Exemples</div>
@@ -186,7 +186,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section" aria-labelledby="processus">
+        <section className="section baoule-section" aria-labelledby="processus">
           <div className="container">
             <div className="section-header">
               <div className="section-kicker">Processus</div>
@@ -204,7 +204,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section" aria-labelledby="workspace">
+        <section className="section baoule-section" aria-labelledby="workspace">
           <div className="container">
             <div className="section-header">
               <div className="section-kicker">Collaboration</div>
