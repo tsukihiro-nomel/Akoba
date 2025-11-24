@@ -27,6 +27,10 @@ npm run start:dev
 
 The backend will start on `http://localhost:3001`. It exposes basic REST endpoints under `/users` and `/projects`. Use a tool like Postman to test them.
 
+### Deploying to Vercel
+
+The repository is structured as a monorepo where the Next.js app lives in `frontend/`. The included `vercel.json` configures Vercel to install, build and run from that directory and rewrites all routes to the frontend app. If you import this repo into Vercel, no extra project settings are needed—just deploy and Vercel will execute the commands defined in `vercel.json`.
+
 ## Limitations
 
 This code is a starting point and **does not** implement many of the advanced features described in the brief, such as:

@@ -1,12 +1,15 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
-    <footer>
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-        <p>© {new Date().getFullYear()} Akoba Studio. Tous droits réservés.</p>
-        <div className="space-x-4">
-          <a href="/legal">Mentions légales</a>
-          <a href="/privacy">Confidentialité</a>
-          <a href="/cookies">Cookies</a>
+    <footer className="footer">
+      <div className="container footer-content">
+        <p>© {new Date().getFullYear()} Akoba Studio. Visuels 3D, packshots et campagnes.</p>
+        <div className="footer-links" aria-label="Liens secondaires">
+          <Link href="/legal">Mentions légales</Link>
+          <Link href="/privacy">Confidentialité</Link>
+          <Link href="/cookies">Cookies</Link>
+          <a href="mailto:hello@akoba.fr">hello@akoba.fr</a>
         </div>
       </div>
     </footer>
