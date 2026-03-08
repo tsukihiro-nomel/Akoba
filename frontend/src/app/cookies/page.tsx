@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
+
+export const metadata: Metadata = {
+  title: 'Cookies',
+  description: 'Gestion des cookies sur le site Akoba Studio. Nécessaires, statistiques et marketing.',
+};
 
 export default function CookiesPage() {
   return (

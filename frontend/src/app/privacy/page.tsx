@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
+
+export const metadata: Metadata = {
+  title: 'Confidentialité',
+  description: 'Politique de confidentialité et traitement des données personnelles chez Akoba Studio (RGPD).',
+};
 
 const sections = [
   {

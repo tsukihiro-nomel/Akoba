@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
+
+export const metadata: Metadata = {
+  title: 'Mentions légales',
+  description: 'Informations légales, éditeur et contacts du studio Akoba.',
+};
 
 export default function LegalPage() {
   return (

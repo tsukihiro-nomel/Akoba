@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import NavBar from '../components/NavBar';
+import CookieBanner from '../components/CookieBanner';
 
 const valuePoints = [
   {
@@ -271,6 +272,7 @@ export default function HomePage() {
         </section>
       </main>
       <Footer />
+      <CookieBanner />
     </>
   );
 }

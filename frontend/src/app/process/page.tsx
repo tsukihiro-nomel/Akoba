@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
+
+export const metadata: Metadata = {
+  title: 'Processus',
+  description: 'Du brief à la livraison : découvrez les étapes de production 3D chez Akoba Studio.',
+};
 
 const steps = [
   {
