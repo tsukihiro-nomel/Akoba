@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
+
+export const metadata: Metadata = {
+  title: 'À propos',
+  description: 'Akoba, studio 3D premium avec des racines ivoiriennes. Vision, culture visuelle baoulé et valeurs.',
+};
 
 const values = [
   'Sincérité : pas de promesse irréalisable, un planning clair et mis à jour.',

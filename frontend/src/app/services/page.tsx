@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
+
+export const metadata: Metadata = {
+  title: 'Services',
+  description: 'Packshots 3D, visuels de campagne, modélisation et animations. Découvrez les offres du studio Akoba.',
+};
 
 const services = [
   {
